@@ -2,14 +2,14 @@ package homework1;
 
 import java.util.Objects;
 
-public class Book1 {
+public class Book {
 
     private String bookName;
     private AuthorBook author;
     private int yearOfIssue;
 
 
-    public Book1(String bookName, AuthorBook author, int yearOfIssue) {
+    public Book(String bookName, AuthorBook author, int yearOfIssue) {
         this.bookName = bookName;
         this.yearOfIssue = yearOfIssue;
         this.author = author;
@@ -42,8 +42,8 @@ public class Book1 {
     public boolean equals(Object o) {
        if (this == o) return true;
         if (o == null || this.getClass() != o.getClass()) return false;
-        Book1 book1 = (Book1) o;
-        return yearOfIssue == book1.yearOfIssue && Objects.equals(bookName, book1.bookName) && Objects.equals(author, book1.author);
+        Book book = (Book) o;
+        return yearOfIssue == book.yearOfIssue && Objects.equals(bookName, book.bookName) && Objects.equals(author, book.author);
     }
 
     @Override
