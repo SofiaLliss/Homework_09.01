@@ -5,13 +5,15 @@ public class MainHomework {
         public static void main(String[] args) {
             System.out.println("Книга №1");
             AuthorBook author = new AuthorBook("Лев", "Толстой");
-            Book1 bookWaP = new Book1("Война и мир", author, 1865);
-            System.out.println("Название книги - " + bookWaP.getBookName());
-            System.out.println("Автор - " + bookWaP.getAuthor());
-            System.out.println("Год выпуска - " + bookWaP.getYearOfIssue());
+            Book1 book = new Book1("Война и мир", author, 1865);
+            System.out.println("Название книги - " + book.getBookName());
+            System.out.println("Автор - " + book.getAuthor());
+            System.out.println("Год выпуска - " + book.getYearOfIssue());
 
-            bookWaP.setYearOfIssue(1866); // Вызываем сеттер
-            System.out.println("Год перевыпуска - " + bookWaP.getYearOfIssue());
+            book.setYearOfIssue(1866); // Вызываем сеттер
+            System.out.println("Год перевыпуска - " + book.getYearOfIssue());
+
+            System.out.println(book);
 
 
             System.out.println(" ");
@@ -22,7 +24,8 @@ public class MainHomework {
             System.out.println("Автор - " + newBook.getAuthor());
             System.out.println("Год выпуска - " + newBook.getYearOfIssue());
 
-
         }
+
     }
+
 
